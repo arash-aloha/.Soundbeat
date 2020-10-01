@@ -195,12 +195,16 @@ overflow: hidden;
 
 .circle-2-visible {
 position: absolute;
-height: 48vh;
-width: 48vh;
-background: rgba(239, 13, 243, 0.1);
-border-radius: 50%;
 right: 0;
 bottom: 0;
+background: rgba(239, 13, 243, 0.1);
+transform: translatey(40%);
+width: 100px;
+height: 190px;
+border-top-left-radius: 100px;
+border-bottom-left-radius: 100px;
+
+
 }
 
 .circle-3-desktop {
