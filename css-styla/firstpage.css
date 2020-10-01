@@ -1,0 +1,243 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --pink: #F83CFC;
+    --yellow: #FBD32E;
+    --white: #fff;
+    --background: #2F303A;
+
+    --mobileWidht: 480px;
+    --tabletWidth: 768px;
+    --desktopWidth: 1024px;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+    background: var(--background);
+    box-sizing: border-box;
+}
+
+p {
+    color: var(--white);
+    font-size: .9em;
+}
+
+h1, h2, h3, h4 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.wrapper-1 {
+    max-width: 1200px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "logo"
+    "hero"
+    "buttons";
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+
+.header-page1--logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--yellow);
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+.icon .brand {
+    width: 45px
+}
+
+
+.brand-name {
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+
+.header-page1--logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.midsection-page1 {
+    grid-area: hero;
+    text-align: center;
+}
+
+.midsection-page1 .hero {
+    display: flex;
+    flex-direction: column;
+    color: rgba(251, 211, 46, 1);
+    font-size: 28px;
+    line-height: 54px;
+    letter-spacing: 2px;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+   
+}
+
+.midsection-page1 p {
+    font-size: 15px;
+    margin: 50px 0;
+    
+}
+
+
+
+.buttons {
+    grid-area: buttons;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 60px;
+   
+}
+
+.buttons a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    padding: .9rem;
+    border-radius: 1.4rem;  
+    z-index: 1;
+    
+}
+
+   
+.button--join {
+    background: var(--yellow);
+    width: 240px;
+    height: 29px;
+    border: 1px solid rgba(84, 57, 57, 1);
+    color: rgba(84, 57, 57, 1);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
+    font-weight: bolder;
+    
+    
+}
+
+.button--discover {
+    background: var(--white);
+    width: 240px;
+    height: 29px;
+    border: 1px solid var(--pink);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
+    margin-top: 2rem;
+    font-weight: bolder;
+    color: rgba(84, 57, 57, 1);
+    
+    
+}
+
+
+
+/* aesthetic circles mobile view */
+
+
+.circle-1-mobile {
+    position: absolute;
+    height: 39vh;
+    width: 39vh;
+    background: rgba(251, 211, 46, .1);
+    border-radius: 50%;
+    z-index: 0;
+    top: 100px;
+    left: -145px;
+    overflow: hidden;
+
+}
+
+
+
+
+.circle-2-visible {
+    position: absolute;
+    height: 48vh;
+    width: 48vh;
+    background: rgba(239, 13, 243, 0.1);
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+}
+
+.circle-3-desktop {
+    display: none;
+
+}
+
+
+@media screen and (min-width: 1000px) { 
+
+    .flex-container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .midsection-page1 {
+        width: 48%;
+    }
+
+    .cover-girl {
+        position: relative;
+        width: 48%;
+    }
+
+    .cover-girl img {
+        max-width: 50vh;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    nav ul {
+        display: flex; 
+        
+           
+    }
+
+    nav ul li {
+        justify-content: center;
+        
+    }
+
+}
