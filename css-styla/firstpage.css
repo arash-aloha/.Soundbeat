@@ -1,5 +1,4 @@
 
-
 /* HTML/BODY re-sets and styling base */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
@@ -37,7 +36,6 @@ padding: 0;
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
 }
 
 
@@ -47,7 +45,7 @@ padding: 0;
 
 .wrapper-1 {
 
-height: 100vh;
+min-height: 100vh;
 display: grid;
 grid-template-columns: repeat(1, 1fr);
 grid-template-areas: 
@@ -107,6 +105,11 @@ display: none;
 
 /* HERO midSection */
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    
+}
 
 .midsection-page1 {
 grid-area: hero;
@@ -123,6 +126,7 @@ letter-spacing: 2px;
 text-align: center;
 align-items: center;
 margin-top: 30px;
+
 
 }
 
@@ -151,36 +155,36 @@ padding-bottom: 60px;
 }
 
 .buttons a {
-text-decoration: none;
-text-align: center;
-font-size: 25px;
-padding: .9rem;
-border-radius: 1.4rem;  
-z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    padding: .9rem;
+    border-radius: 1.4rem;  
+    z-index: 1;
 
 }
 
 
 .button--join {
-background: var(--yellow);
-width: 240px;
-height: 29px;
-border: 1px solid rgba(84, 57, 57, 1);
-color: rgba(84, 57, 57, 1);
-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
-font-weight: bolder;
+    background: var(--yellow);
+    width: 240px;
+    height: 29px;
+    border: 1px solid rgba(84, 57, 57, 1);
+    color: rgba(84, 57, 57, 1);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
+    font-weight: bolder;
 
 }
 
 .button--discover {
-background: var(--white);
-width: 240px;
-height: 29px;
-border: 1px solid var(--pink);
-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
-margin-top: 2rem;
-font-weight: bolder;
-color: rgba(84, 57, 57, 1);
+    background: var(--white);
+    width: 240px;
+    height: 29px;
+    border: 1px solid var(--pink);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
+    margin-top: 2rem;
+    font-weight: bolder;
+    color: rgba(84, 57, 57, 1);
 
 
 }
@@ -190,7 +194,7 @@ color: rgba(84, 57, 57, 1);
 /* aesthetic circles mobile view */
 
 
-.circle-1-mobile {
+.circle-1-visable {
 position: absolute;
 height: 43vh;
 width: 43vh;
@@ -209,10 +213,9 @@ position: absolute;
 right: 0;
 bottom: 0;
 background: rgba(239, 13, 243, 0.1);
-transform: translatey(40%);
 width: 225px;
 height: 350px;
-border-top-left-radius: 300px;
+border-top-left-radius: 200px;
 border-bottom-left-radius: 200px;
 
 
@@ -232,37 +235,25 @@ display: none;
 
 @media screen and (min-width: 1000px) { 
 
-.flex-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.container {
+    padding: 0 40px;
 }
 
-.buttons a {
-    font-size: 15px;
-}
 
-.button--join {
-    background: var(--yellow);
-    width: 190px;
-    height: 15px;
-    border: 1px solid rgba(84, 57, 57, 1);
-    color: rgba(84, 57, 57, 1);
-    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
-    
-}
 
-.button--discover {
-    display: none;
-}
+
+/* header/nav--mainpage */
 
 
 .header-page1--logo nav {
     display: flex;
     align-items: center;
     
+}
+
+.header-page1--logo a {
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 nav ul {
@@ -288,32 +279,69 @@ nav a:hover {
     color: rgb(75, 75, 1);
 }
 
-.header-page1--logo a {
-    padding-top: 0px;
-    margin-top: 0px;
+
+
+
+
+/* buttons */
+.buttons a {
+    font-size: 15px;
 }
 
-.midsection-page1 {
-    width: 48%;
-}
-
-.cover-girl {
-    display: flex;
-    width: 48%;
-}
-
-.cover-girl img {
-    max-width: 50vh;
-    position: absolute;
-    bottom: 0px;
-    z-index: 1;
+.button--join {
+    background: var(--yellow);
+    width: 190px;
+    height: 15px;
+    border: 1px solid rgba(84, 57, 57, 1);
+    color: rgba(84, 57, 57, 1);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
     
 }
 
+.button--discover {
+    display: none;
+}
+
+
+/* hero */
+
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+
+
+.cover-girl {
+    display: flex;
+
+}
+
+.cover-girl img {
+    
+    max-width: 65vh;
+    z-index: 1; 
+}
+
+
+
+
+
+
 /* aesthetic circles */
 
-.circle-1-mobile {
-    display: none;
+.circle-1-visable {
+    position: absolute;
+    height: 50vh;
+    width: 50vh;
+    background: rgba(239, 13, 243, 0.07);
+    border-radius: 50%;
+    z-index: 0;
+    overflow: hidden;
+    transform: translate(170px, 264px);
 }
 
 .circle-3-desktop {
