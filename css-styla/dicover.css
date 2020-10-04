@@ -1,3 +1,7 @@
+
+/* Mobile first */
+
+
 .wrapper-2 {
     display: flex;
     flex-wrap: wrap;
@@ -9,16 +13,42 @@
 .links-menu {
     display: flex;
     flex-direction: column;
+ 
+}
+
+.links-menu a {
+    background: #09090B;
+    height: 100px;
+    width: 100px;
+    margin: .7rem;
+    display: flex;
+    
+}
+
+.links-menu a {
+    
+    justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
+
 }
 
-.covers img {
-    
+.links-menu a .subtitle {
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 100;
+}
+
+.covers img { 
     width: 80%;
-    padding: 2rem;
+    text-align: center;
 }
 
-h4 {
-    ;
+
+
+h1 {
+    color: var(--yellow);
+    font-size: 20px;
+    padding: 1rem;
+    margin-top: 3rem;
 }

@@ -1,7 +1,7 @@
 
 /* HTML/BODY re-sets and styling base */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap');
 
 :root {
 --pink: #F83CFC;
@@ -58,7 +58,7 @@ margin: 0 auto;
 
 
 
-.header-page1--logo a {
+.header-page--logo a {
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -81,7 +81,7 @@ font-weight: lighter;
 }
 
 
-.header-page1--logo {
+.header-page--logo {
 grid-area: logo;
 display: flex;
 justify-content: space-between;
@@ -94,7 +94,7 @@ justify-content: space-between;
 display: none;
 }
 
-.header-page1--logo nav {
+.header-page--logo nav {
 display: none;
 }
 
@@ -245,13 +245,13 @@ display: none;
 /* header/nav--mainpage */
 
 
-.header-page1--logo nav {
+.header-page--logo nav {
     display: flex;
     align-items: center;
     
 }
 
-.header-page1--logo a {
+.header-page--logo a {
     padding-top: 0px;
     margin-top: 0px;
 }
@@ -310,7 +310,7 @@ nav a:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
+    
     
 }
 
@@ -325,9 +325,6 @@ nav a:hover {
     max-width: 65vh;
     z-index: 1; 
 }
-
-
-
 
 
 
@@ -354,3 +351,7 @@ nav a:hover {
     top: 50px;
     right: 40%;
 }
+
+
+
+
