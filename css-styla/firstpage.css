@@ -65,6 +65,7 @@ text-decoration: none;
 color: var(--yellow);
 padding-left: 5px;
 padding-top: 5px;
+height: 10vh;
 
 }
 
@@ -74,10 +75,10 @@ width: 45px
 
 
 .brand-name {
-letter-spacing: 4px;
-font-size: 20px;
-padding-left: 10px;
-font-weight: lighter;
+    letter-spacing: 4px;
+    font-size: 22px;
+    padding-left: 10px;
+    font-weight: 500;
 }
 
 
