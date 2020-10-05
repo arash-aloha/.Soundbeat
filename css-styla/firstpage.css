@@ -304,6 +304,11 @@ nav a:hover {
 }
 
 
+
+
+
+
+
 /* hero */
 
 .flex-container {
@@ -339,8 +344,9 @@ nav a:hover {
     border-radius: 50%;
     z-index: 0;
     overflow: hidden;
-    transform: translate(170px, 264px);
+    transform: translate(170px, 250px);
 }
+
 
 .circle-3-desktop {
     display: flex;
