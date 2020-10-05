@@ -1,0 +1,169 @@
+
+/* aesthetic circle */
+
+
+.circle-4 {
+    position: absolute;
+    height: 40vh;
+    width: 40vh;
+    background: rgba(251, 211, 46, .1);
+    border-radius: 50%;
+    z-index: 0;
+    top: 70px;
+    left: -122px;
+    overflow: hidden;
+    
+}
+
+
+/* Join the fun. */
+
+
+.title-join {
+    font-weight: 600;
+    padding-left: 3rem;
+    font-size: 55px;
+    color: var(--yellow);
+    letter-spacing: 0.06rem;
+}
+
+#style-fun {
+    font-size: 75px;
+    letter-spacing: 0.1rem;
+    color: var(--pink);
+}
+
+
+
+
+/* form section */
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+  
+form input {
+    background: rgb(4, 4, 5);
+    width: 300px;
+    height: 35px;
+    margin: 1rem;
+    border-radius: 10px;
+    justify-content: center;
+    padding: .4rem;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.18);
+
+}
+
+
+.join-button {
+    background: var(--yellow);
+    width: 220px;
+    height: 40px;
+    color: rgba(84, 57, 57, 1);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
+    font-weight: bolder;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.join-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.join-button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRID layout desktop */
+
+@media screen and (min-width: 1000px) {
+
+.wrapper-3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10vh 58vh; 
+
+
+}
+
+
+.title-join {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+
+.form-section {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 13; 
+    grid-row-start: 5;
+    grid-row-end: 6;
+    
+    
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "contact-links contact-links socials socials";
+}
+
+}
+
+
+/* Footer */
+
+
+.footer-nav {
+    background: rgba(9, 9, 11, 1);   
+}
+
+.footer-nav ul {
+
+}
+
+.contact-links {
+    grid-area: contact-links;
+
+}
+
+.socials {
+    grid-area: socials;
+}
+

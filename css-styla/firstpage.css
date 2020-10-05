@@ -45,7 +45,7 @@ padding: 0;
 
 .wrapper-1 {
 
-min-height: 100vh;
+max-height: 100vh;
 display: grid;
 grid-template-columns: repeat(1, 1fr);
 grid-template-areas: 
@@ -75,10 +75,10 @@ width: 45px
 
 
 .brand-name {
-    letter-spacing: 4px;
-    font-size: 22px;
-    padding-left: 10px;
-    font-weight: 500;
+letter-spacing: 4px;
+font-size: 22px;
+padding-left: 10px;
+font-weight: 500;
 }
 
 
@@ -132,8 +132,8 @@ margin-top: 30px;
 }
 
 .midsection-page1 p {
-font-size: 15px;
-margin: 50px 0;
+    font-size: 15px;
+    margin: 50px 0;
 
 }
 
@@ -146,12 +146,12 @@ margin: 50px 0;
 
 
 .buttons {
-grid-area: buttons;    
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
-padding-bottom: 60px;
+    grid-area: buttons;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 60px;
 
 }
 
@@ -189,6 +189,10 @@ padding-bottom: 60px;
 
 
 }
+
+
+
+
 
 
 
@@ -309,6 +313,7 @@ nav a:hover {
 
 
 
+
 /* hero */
 
 .flex-container {
@@ -334,6 +339,11 @@ nav a:hover {
 
 
 
+
+
+
+
+
 /* aesthetic circles */
 
 .circle-1-visable {
@@ -346,7 +356,6 @@ nav a:hover {
     overflow: hidden;
     transform: translate(170px, 250px);
 }
-
 
 .circle-3-desktop {
     display: flex;
