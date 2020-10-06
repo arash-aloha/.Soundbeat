@@ -15,6 +15,19 @@
     
 }
 
+.circle-5 {
+    position: absolute;
+    height: 14vh;
+    width: 14vh;
+    background: rgba(239, 13, 243, 0.2);
+    border-radius: 50%;
+    z-index: 0;
+    top: 60px;
+    right: 18px;
+    
+    
+}
+
 
 /* Join the fun. */
 
@@ -25,12 +38,14 @@
     font-size: 55px;
     color: var(--yellow);
     letter-spacing: 0.06rem;
+    margin-top: 5rem;
 }
 
 #style-fun {
     font-size: 75px;
     letter-spacing: 0.1rem;
     color: var(--pink);
+    z-index: 2;
 }
 
 
@@ -43,37 +58,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
+    
     
 
 }
   
 form input {
     background: rgb(4, 4, 5);
-    width: 300px;
+    width: 280px;
     height: 35px;
     margin: 1rem;
     border-radius: 10px;
     justify-content: center;
-    padding: .4rem;
     box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.18);
 
 }
 
+form label {
+    z-index: 2;
+}
 
 .join-button {
     background: var(--yellow);
-    width: 220px;
+    width: 280px;
     height: 40px;
-    color: rgba(84, 57, 57, 1);
+    color: rgb(84, 57, 57);
     box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.18);
     font-weight: bolder;
     border-radius: 1rem;
     margin: 1rem;
+    z-index: 2;
+    
 }
 
 .join-button {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
+    border-radius: 2.2rem;
 }
 
 .join-button:hover {
@@ -81,8 +103,24 @@ form input {
 }
 
 
+.footer-nav {
+    background: rgba(9, 9, 11, 1); 
+    height: 16vh;  
+}
 
+.socials img {
+    width: 2em;
+    margin-right: .8rem;
+    vertical-align: middle;
+}
 
+.socials li a {
+    font-size: 20px;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+}
 
 
 
@@ -104,6 +142,7 @@ form input {
 @media screen and (min-width: 1000px) {
 
 .wrapper-3 {
+    
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 10vh 58vh; 
@@ -139,31 +178,76 @@ footer {
 
 .footer-nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "contact-links contact-links socials socials";
-}
+    grid-template-columns: repeat(12, 1fr);
+    height: 16vh;
 
 }
 
 
-/* Footer */
 
 
-.footer-nav {
-    background: rgba(9, 9, 11, 1);   
-}
-
-.footer-nav ul {
-
-}
 
 .contact-links {
     grid-area: contact-links;
-
+    grid-column-start: 1;
+    grid-column-end: 7; 
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 
 .socials {
     grid-area: socials;
+    grid-column-start: 8;
+    grid-column-end: 13; 
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 
+
+
+
+/* styling desktop */
+
+.title-join {
+    font-weight: 600;
+    padding-left: 3rem;
+    font-size: 69px;
+    color: var(--yellow);
+    letter-spacing: 0.07rem;
+    margin-top: 5rem;
+}
+
+#style-fun {
+    font-size: 85px;
+    letter-spacing: 0.12rem;
+    color: var(--pink);
+    z-index: 2;
+}
+
+
+/* form section */
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 89px;
+    
+    
+
+}
+  
+form input {
+    background: rgb(4, 4, 5);
+    width: 30vw;
+    height: 42px;
+    margin: 1rem;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.18);
+
+}
+
+}
