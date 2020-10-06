@@ -240,11 +240,6 @@ display: none;
 
 @media screen and (min-width: 1000px) { 
 
-.container {
-    padding: 0 40px;
-}
-
-
 
 
 /* header/nav--mainpage */
@@ -369,5 +364,5 @@ nav a:hover {
 }
 
 
-
+}
 
