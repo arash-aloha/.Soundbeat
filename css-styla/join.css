@@ -193,12 +193,9 @@ form label {
     vertical-align: middle;
 }
 
-.socials li a {
-    font-size: 10px;
-}
-
 .footer-nav ul li a {
     color: #fff;
+    font-size: 20px;
 }
 
 
